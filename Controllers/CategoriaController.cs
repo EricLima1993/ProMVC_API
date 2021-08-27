@@ -51,7 +51,7 @@ namespace ProMVC_API.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(categoriaModel).State = EntityState.Modified;
+            _context.SetModified(categoriaModel);
 
             try
             {
